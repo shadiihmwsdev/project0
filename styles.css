@@ -172,5 +172,9 @@ h1{
   .tune{
     color:#373636 ;
   }
-  
+  .dev{
+    color: #fa8d07;
+    font-weight: normal;
+    font-family: 'Pacifico', cursive;
+  }
 
