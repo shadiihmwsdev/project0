@@ -127,9 +127,9 @@ h1{
     .image-placeholder:last-child{
       margin-bottom: 40px;   
     }
-    /* html{
-      height: vh;
-    } */
+    figcaption {
+      font-size: x-small;
+   }
   }
   @media screen and (min-width: 576px) and (max-width:1024) {
     img{
@@ -154,6 +154,9 @@ h1{
       height: 300px;
       width: 200px;
     }
+    figcaption {
+      font-size: xx-small;
+   }
   }
 
   .Rotate{
