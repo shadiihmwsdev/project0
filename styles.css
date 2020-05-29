@@ -2,11 +2,8 @@ html{
   position: relative; 
   top: 0; 
   left: 0; 
-  min-width: 100%;
-  min-height: 100%;
-
+  min-height: 100%; 
 }
-
 html::before{
   content: "";
    background:#ccc; /*; url('images/comp1.jpg') center no-repeat; */
@@ -17,10 +14,12 @@ html::before{
   position: absolute;
   background-size: cover;
   z-index: -1; 
+ /* min-height: 100%; */
 }
-.home, .about,p,footer .footer{
+.home, .about,p, .mission, .gallery,footer .footer{
     text-align: center;
 }
+
 ul {
     display: table;
     margin: 0 auto;
@@ -67,6 +66,7 @@ h1{
   .social{
     text-align: center;
     margin-top: 5px;
+    margin-bottom: 50px;
   }
   .twitter{
     position: relative;
@@ -95,9 +95,6 @@ h1{
     justify-content: center;
     align-items: center;
   }
-  html{
-    height: auto;
-  }
   .image-placeholder:nth-child(1),.image-placeholder:nth-child(2){
     margin-right: auto;   
   }
@@ -124,10 +121,8 @@ h1{
       width: 200px;
       background: #5a442a; 
       margin-bottom: 40px;
-    }
-    .image-placeholder{
       width: 100%;
-      margin-bottom: 20px;   
+      margin-bottom: 20px;
     }
     .image-placeholder:last-child{
       margin-bottom: 40px;   
@@ -139,6 +134,25 @@ h1{
   @media screen and (min-width: 576px) and (max-width:1024) {
     img{
       width: 100%;
+    }
+    .image-placeholder{
+      height: 300px;
+      width: 200px;
+      background: #5a442a; 
+      margin-bottom: 40px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  @media screen and (min-width: 667px) and (max-width:776) {
+    img{
+      width: 100%;
+    }
+    .image-placeholder{
+      height: 300px;
+      width: 200px;
     }
   }
 
@@ -176,5 +190,8 @@ h1{
     color: #fa8d07;
     font-weight: normal;
     font-family: 'Pacifico', cursive;
+  }
+  ul li a{
+    text-align: center;
   }
 
