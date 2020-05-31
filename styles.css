@@ -47,7 +47,7 @@ html::before {
 }
 
 h1 {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 0px;
 }
 
@@ -142,20 +142,6 @@ main, .active {
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 667) {
-  img {
-    width: 100%;
-  }
-  .image-placeholder {
-    height: 300px;
-    width: 200px;
-    background: #5a442a;
-    margin-bottom: 40px;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
 .Rotate {
   display: inline-block;
   border: solid 2px #fa8d07;
@@ -210,20 +196,76 @@ text {
   font-weight: normal;
   font-family: 'Pacifico', cursive;
 }
-
+main{
+  margin-top: 8%;
+}
 .image-placeholder {
   height: 300px;
 }
+.hr-about {
+  width: 8rem;
+}
 
-@media only screen and (max-width: 576px) {
+.hr-home {
+  width: 20rem;
+}
+
+.hr-g {
+  width: 15rem;
+}
+
+.hr-m {
+  width: 8rem;
+}
+@media only screen and (min-width: 667px) and (max-width: 823px) {
+  main{
+    margin-top: 16%;
+  }
+  .hr-home{
+    width: 15rem;
+  }
+  .hr-about{
+    width: 8rem;
+  }
+  .hr-g{
+    width: 16rem;
+  }
+  .hr-m{
+    width:8rem;
+  }
+  img {
+    width: 100%;
+  }
+  .image-placeholder {
+    height: 300px;
+    width: 200px;
+  }
+  figcaption {
+    font-size: xx-small;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main{
+    margin-top: 24%;
+  }
   img {
     width: 100%;
   }
   h1{
-    font-size: 1.8rem !important;
+    font-size: 2rem;
   }
   .hr-home{
-    width: 5rem !important;
+    width: 10rem;
+  }
+  .hr-about{
+    width: 7rem;
+  }
+  .hr-g{
+    width: 10rem;
+  }
+  .hr-m{
+    width:7rem;
   }
   .image-placeholder {
     height: 300px;
@@ -241,34 +283,6 @@ text {
   }
 }
 
-@media only screen, (min-width: 667px) and (max-width: 776) {
-  img {
-    width: 100%;
-  }
-  h1{
-    font-size: 2rem;
-  }
-  .hr-home{
-    width: 18rem !important;
-  }
-  .hr-about{
-    width:6rem !important;
-  }
-  .hr-g{
-    width:14rem !important;
-  }
-  .hr-m{
-    width: 7rem !important;
-  }
-  .image-placeholder {
-    height: 300px;
-    width: 200px;
-  }
-  figcaption {
-    font-size: xx-small;
-  }
-}
-
 ul {
   display: table;
   margin: 0 auto;
@@ -278,19 +292,4 @@ ul li a {
   text-align: center;
 }
 
-.hr-about {
-  width: 8rem;
-}
-
-.hr-home {
-  width: 20rem;
-}
-
-.hr-g {
-  width: 15rem;
-}
-
-.hr-m {
-  width: 8rem;
-}
 /*# sourceMappingURL=styles.css.map */
