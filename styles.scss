@@ -10,11 +10,10 @@ $viewHeight: 300px;
 }
 
 %horizontal{
-  margin-top: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 5px solid rgb(175, 109, 28);
+  border: 3px solid rgb(175, 109, 28);
 }
 
 html{
@@ -38,9 +37,13 @@ html::before{
     text-align: center;
 }
 
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
 h1{
   margin-bottom: 0px;
 }
+
   #image{
     display: block;
     margin-left: auto;
@@ -66,6 +69,7 @@ h1{
   .active{
    /* border-top: 1px solid #fdc073; */
    background-color: #c8a272;
+   font-weight: bold;
    border-radius: 15px;
   }
   .social{
@@ -105,16 +109,18 @@ h1{
         opacity: 1; 
     } 
 } 
-
+.logo{
+  font-size: 1.5rem;
+}
   .Rotate{
     display: inline-block;
-    border: solid 2px #fa8d07;
-    background-color: #373636;
+    border: solid 3px rgb(175, 109, 28);
+    background-color: rgb(75, 45, 8);
     font-size: 1.2rem;
-    font-family: 'Diplomata', cursive;
-    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
     padding: 5px;
-    color: white;
+    color: #ffffff;
     margin-right: 5px;
     margin-left: 5px;
     animation: roll 4s infinite;
@@ -141,7 +147,11 @@ h1{
   .dev{
     color: #fa8d07;
     font-weight: normal;
+    font-size: 0.8rem;
     font-family: 'Pacifico', cursive;
+  }
+  .img-m{
+    margin-bottom: 0px;
   }
 
 .image-placeholder{
@@ -228,9 +238,7 @@ main{
        width: 100%;
        margin-bottom: 20px;
      }
-     .image-placeholder:last-child{
-       margin-bottom: 20px;   
-     }
+ 
      figcaption {
        font-size: x-small;
     }
@@ -243,11 +251,9 @@ main{
   }
 }
 .new-p{
-  font-size: small;
+  font-size: 0.6rem;
   margin-bottom: 50px;
   text-decoration: underline;
   text-decoration-color: rgb(175, 109, 28);
   text-decoration-style: double;
 }
-  
-  

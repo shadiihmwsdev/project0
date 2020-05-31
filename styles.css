@@ -15,11 +15,10 @@
 }
 
 .hr-about, .hr-home, .hr-g, .hr-m {
-  margin-top: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 5px solid #af6d1c;
+  border: 3px solid #af6d1c;
 }
 
 html {
@@ -44,6 +43,10 @@ html::before {
 
 .home, .about, p, .mission, .gallery, footer .footer {
   text-align: center;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1 {
@@ -82,6 +85,7 @@ figcaption {
 .active {
   /* border-top: 1px solid #fdc073; */
   background-color: #c8a272;
+  font-weight: bold;
   border-radius: 15px;
 }
 
@@ -141,15 +145,19 @@ main, .active {
   }
 }
 
+.logo {
+  font-size: 1.5rem;
+}
+
 .Rotate {
   display: inline-block;
-  border: solid 2px #fa8d07;
-  background-color: #373636;
+  border: solid 3px #af6d1c;
+  background-color: #4b2d08;
   font-size: 1.2rem;
-  font-family: 'Diplomata', cursive;
-  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
   padding: 5px;
-  color: white;
+  color: #ffffff;
   margin-right: 5px;
   margin-left: 5px;
   -webkit-animation: roll 4s infinite;
@@ -194,7 +202,12 @@ text {
 .dev {
   color: #fa8d07;
   font-weight: normal;
+  font-size: 0.8rem;
   font-family: 'Pacifico', cursive;
+}
+
+.img-m {
+  margin-bottom: 0px;
 }
 
 .image-placeholder {
@@ -282,9 +295,6 @@ main {
     width: 100%;
     margin-bottom: 20px;
   }
-  .image-placeholder:last-child {
-    margin-bottom: 20px;
-  }
   figcaption {
     font-size: x-small;
   }
@@ -300,7 +310,7 @@ ul li a {
 }
 
 .new-p {
-  font-size: small;
+  font-size: 0.6rem;
   margin-bottom: 50px;
   text-decoration: underline;
   -webkit-text-decoration-color: #af6d1c;
