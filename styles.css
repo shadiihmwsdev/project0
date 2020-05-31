@@ -291,5 +291,12 @@ ul {
 ul li a {
   text-align: center;
 }
+p{
+  font-size: small; 
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-decoration-color: #af6d1c;
+  margin-bottom: 50px;
+}
 
 /*# sourceMappingURL=styles.css.map */
