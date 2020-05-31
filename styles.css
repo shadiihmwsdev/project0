@@ -160,7 +160,6 @@ main, .active {
 #marquee {
   -webkit-animation: glow 2s infinite;
           animation: glow 2s infinite;
-  font-size: 1.2rem;
 }
 
 @-webkit-keyframes glow {
