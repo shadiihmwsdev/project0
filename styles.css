@@ -215,19 +215,15 @@ text {
   height: 300px;
 }
 
-@media screen and (min-width: 1024px) {
-  .image-placeholder:hover {
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    z-index: 1;
-  }
-}
-
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   img {
     width: 100%;
+  }
+  h1{
+    font-size: 1.8rem !important;
+  }
+  .hr-home{
+    width: 5rem !important;
   }
   .image-placeholder {
     height: 300px;
@@ -245,9 +241,24 @@ text {
   }
 }
 
-@media screen and (min-width: 667px) and (max-width: 776) {
+@media only screen, (min-width: 667px) and (max-width: 776) {
   img {
     width: 100%;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .hr-home{
+    width: 18rem !important;
+  }
+  .hr-about{
+    width:6rem !important;
+  }
+  .hr-g{
+    width:14rem !important;
+  }
+  .hr-m{
+    width: 7rem !important;
   }
   .image-placeholder {
     height: 300px;
