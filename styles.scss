@@ -1,0 +1,230 @@
+$viewHeight: 300px;
+%inheritedStyles{
+  width: 100%;
+  background: #5a442a; 
+  margin-bottom: 0px;
+  color:#ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%horizontal{
+  margin-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 5px solid rgb(175, 109, 28);/*(200, 162, 114*/
+}
+
+html{
+  position: relative; 
+  top: 0; 
+  left: 0; 
+  min-height: 100%; 
+}
+html::before{
+  content: "";
+   background:#ccc; /*; url('images/comp1.jpg') center no-repeat; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-size: cover;
+  z-index: -1; 
+}
+.home, .about,p, .mission, .gallery,footer .footer{
+    text-align: center;
+}
+
+h1{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+  #image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: all .2s ease-in-out;
+  }
+  #image:hover { transform: scale(1.05); }
+  figure {
+    border: 1px #adabab solid;
+    padding: 4px;
+    margin: auto;
+    background-color: #a39d9d;
+  }
+  
+  figcaption {
+     background-color: #ccc;
+    color: #000000;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+  .active{
+   /* border-top: 1px solid #fdc073; */
+   background-color: #c8a272;
+   border-radius: 15px;
+  }
+  .social{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  .twitter{
+    position: relative;
+    bottom: 0;
+    color: #529dec;
+    transition: all 0.2s ease-in-out;
+  }
+  .twitter:hover{
+    bottom: 5px;
+    color: #007bff;
+  }
+  .footer{
+    max-height: 100px;
+    background-color: #373636;
+    color: #ffffff;
+  }
+ 
+  .image-placeholder:nth-child(1),.image-placeholder:nth-child(2){
+    margin-right: auto;   
+  }
+  main , .active{ 
+    animation: fadeInMain ease 2s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+@keyframes fadeInMain { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
+  @media screen and (min-width: 576px) and (max-width:667) {
+    img{
+      width: 100%;
+    }
+    .image-placeholder{
+      height: $viewHeight;
+      width: 200px;
+      background: #5a442a; 
+      margin-bottom: 40px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  
+  .Rotate{
+    display: inline-block;
+    border: solid 2px #fa8d07;
+    background-color: #373636;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    animation: roll 4s infinite;
+    transform: rotate(30deg);
+    opacity: .7;
+    border-radius: 10px;
+  }
+  @keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  text{
+    font-weight: bold;
+    color: #fa8d07;
+  }
+  .tune{
+    color:#373636 ;
+  }
+  .dev{
+    color: #fa8d07;
+    font-weight: normal;
+    font-family: 'Pacifico', cursive;
+  }
+
+.image-placeholder{
+    height: $viewHeight;
+    @extend %inheritedStyles;
+  }
+  @media screen and (min-width:1024px){
+    .image-placeholder:hover{
+      transition: all .2s ease-in-out;
+      transform: scale(1.10);
+      z-index: 1;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    img{
+      width: 100%;
+    }
+    .image-placeholder{
+      height: $viewHeight;
+      width: 200px;
+      background: #5a442a; 
+      margin-bottom: 40px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .image-placeholder:last-child{
+      margin-bottom: 20px;   
+    }
+    figcaption {
+      font-size: x-small;
+   }
+  }
+  @media screen and (min-width: 667px) and (max-width:776) {
+    img{
+      width: 100%;
+    }
+    .image-placeholder{
+      height: $viewHeight;
+      width: 200px;
+    }
+    figcaption {
+      font-size: xx-small;
+   }
+  }
+
+  ul{
+    display: table;
+    margin: 0 auto;
+   li a{
+    text-align: center;
+  }
+}
+  .hr-about{
+    @extend %horizontal;
+    width: 8rem;
+  }
+  .hr-home{
+    @extend %horizontal;
+    width: 20rem;
+  }
+  .hr-g{
+    @extend %horizontal;
+    width: 15rem;
+  }
+  .hr-m{
+    @extend %horizontal;
+    width: 8rem;
+  }
+  
+  
