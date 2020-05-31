@@ -39,7 +39,6 @@ html::before{
 }
 
 h1{
-  margin-top: 20px;
   margin-bottom: 0px;
 }
   #image{
@@ -107,27 +106,12 @@ h1{
     } 
 } 
 
-  @media screen and (min-width: 576px) and (max-width:667) {
-    img{
-      width: 100%;
-    }
-    .image-placeholder{
-      height: $viewHeight;
-      width: 200px;
-      background: #5a442a; 
-      margin-bottom: 40px;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-  }
-
-  
   .Rotate{
     display: inline-block;
     border: solid 2px #fa8d07;
     background-color: #373636;
     font-size: 1.2rem;
+    font-family: 'Diplomata', cursive;
     font-weight: bold;
     padding: 5px;
     color: white;
@@ -164,53 +148,6 @@ h1{
     height: $viewHeight;
     @extend %inheritedStyles;
   }
-  @media screen and (min-width:1024px){
-    .image-placeholder:hover{
-      transition: all .2s ease-in-out;
-      transform: scale(1.10);
-      z-index: 1;
-    }
-  }
-
-  @media screen and (max-width: 576px) {
-    img{
-      width: 100%;
-    }
-    .image-placeholder{
-      height: $viewHeight;
-      width: 200px;
-      background: #5a442a; 
-      margin-bottom: 40px;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    .image-placeholder:last-child{
-      margin-bottom: 20px;   
-    }
-    figcaption {
-      font-size: x-small;
-   }
-  }
-  @media screen and (min-width: 667px) and (max-width:776) {
-    img{
-      width: 100%;
-    }
-    .image-placeholder{
-      height: $viewHeight;
-      width: 200px;
-    }
-    figcaption {
-      font-size: xx-small;
-   }
-  }
-
-  ul{
-    display: table;
-    margin: 0 auto;
-   li a{
-    text-align: center;
-  }
-}
   .hr-about{
     @extend %horizontal;
     width: 8rem;
@@ -227,5 +164,90 @@ h1{
     @extend %horizontal;
     width: 8rem;
   }
+main{
+  margin-top: 8%;
+}
+  @media only screen and (min-width: 667px) and (max-width:823px) {
+    img{
+      width: 100%;
+    }
+    h1{
+      font-size: 2rem;
+    }
+    main{
+      margin-top: 16%;
+    }
+    .hr-home{
+      width: 15rem;
+    }
+   .hr-about{
+     width: 7rem;
+   }
+   .hr-g{
+     width: 12rem;
+   }
+   .hr-m{
+     width: 7rem;
+   }
+    .image-placeholder{
+      height: $viewHeight;
+      width: 200px;
+    }
+    figcaption {
+      font-size: xx-small;
+   }
+
+  }
+  @media screen and (max-width: 576px) {
+    img{
+       width: 100%;
+     }
+     h1{
+       font-size: 2rem;
+     }
+     main{
+       margin-top: 24%;
+     }
+     .hr-home{
+       width: 10rem;
+     }
+     .hr-about{
+       width: 7rem;
+     }
+     .hr-g{
+       width: 12rem;
+     }
+     .hr-m{
+       width: 7rem;
+     }
+     .image-placeholder{
+       height: $viewHeight;
+       width : 200px;
+       background: #5a442a; 
+       margin-bottom: 40px;
+       width: 100%;
+       margin-bottom: 20px;
+     }
+     .image-placeholder:last-child{
+       margin-bottom: 20px;   
+     }
+     figcaption {
+       font-size: x-small;
+    }
+   }
+  ul{
+    display: table;
+    margin: 0 auto;
+   li a{
+    text-align: center;
+  }
+}
+.new-p{
+  font-size: small;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgb(175, 109, 28);
+  text-decoration-style: double;
+}
   
   

@@ -47,7 +47,6 @@ html::before {
 }
 
 h1 {
-  /* margin-top: 20px; */
   margin-bottom: 0px;
 }
 
@@ -147,6 +146,7 @@ main, .active {
   border: solid 2px #fa8d07;
   background-color: #373636;
   font-size: 1.2rem;
+  font-family: 'Diplomata', cursive;
   font-weight: bold;
   padding: 5px;
   color: white;
@@ -196,12 +196,11 @@ text {
   font-weight: normal;
   font-family: 'Pacifico', cursive;
 }
-main{
-  margin-top: 8%;
-}
+
 .image-placeholder {
   height: 300px;
 }
+
 .hr-about {
   width: 8rem;
 }
@@ -217,24 +216,32 @@ main{
 .hr-m {
   width: 8rem;
 }
+
+main {
+  margin-top: 8%;
+}
+
 @media only screen and (min-width: 667px) and (max-width: 823px) {
-  main{
-    margin-top: 16%;
-  }
-  .hr-home{
-    width: 15rem;
-  }
-  .hr-about{
-    width: 8rem;
-  }
-  .hr-g{
-    width: 16rem;
-  }
-  .hr-m{
-    width:8rem;
-  }
   img {
     width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  main {
+    margin-top: 16%;
+  }
+  .hr-home {
+    width: 15rem;
+  }
+  .hr-about {
+    width: 7rem;
+  }
+  .hr-g {
+    width: 12rem;
+  }
+  .hr-m {
+    width: 7rem;
   }
   .image-placeholder {
     height: 300px;
@@ -246,26 +253,26 @@ main{
 }
 
 @media screen and (max-width: 576px) {
-  main{
-    margin-top: 24%;
-  }
   img {
     width: 100%;
   }
-  h1{
+  h1 {
     font-size: 2rem;
   }
-  .hr-home{
+  main {
+    margin-top: 24%;
+  }
+  .hr-home {
     width: 10rem;
   }
-  .hr-about{
+  .hr-about {
     width: 7rem;
   }
-  .hr-g{
-    width: 10rem;
+  .hr-g {
+    width: 12rem;
   }
-  .hr-m{
-    width:7rem;
+  .hr-m {
+    width: 7rem;
   }
   .image-placeholder {
     height: 300px;
@@ -291,12 +298,14 @@ ul {
 ul li a {
   text-align: center;
 }
-p{
-  font-size: small; 
-  text-decoration-line: underline;
-  text-decoration-style: double;
-  text-decoration-color: #af6d1c;
-  margin-bottom: 50px;
-}
 
+.new-p {
+  font-size: small;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #af6d1c;
+          text-decoration-color: #af6d1c;
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
+}
 /*# sourceMappingURL=styles.css.map */
