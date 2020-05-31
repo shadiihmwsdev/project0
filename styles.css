@@ -20,7 +20,6 @@
   margin-bottom: 1rem;
   border: 0;
   border-top: 5px solid #af6d1c;
-  /*(200, 162, 114*/
 }
 
 html {
@@ -203,7 +202,7 @@ text {
 }
 
 .tune {
-  color: #373636;
+  color: #4b2d08;
 }
 
 .dev {

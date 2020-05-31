@@ -14,7 +14,7 @@ $viewHeight: 300px;
   margin-top: 0;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 5px solid rgb(175, 109, 28);/*(200, 162, 114*/
+  border-top: 5px solid rgb(175, 109, 28);
 }
 
 html{
@@ -151,7 +151,8 @@ h1{
     color: #fa8d07;
   }
   .tune{
-    color:#373636 ;
+    // color:#373636 ;
+    color: rgb(75, 45, 8)
   }
   .dev{
     color: #fa8d07;
