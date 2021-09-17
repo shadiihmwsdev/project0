@@ -146,6 +146,7 @@ main, .active {
 }
 
 #marquee {
+  font-size: 1.5em;
   -webkit-animation: glow 2s infinite;
           animation: glow 2s infinite;
 }
